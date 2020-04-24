@@ -21,9 +21,6 @@ Model.knex(knex);
 // Pretty JSON
 app.set('json spaces', 2)
 
-// Serve react static files
-app.use(express.static(path.join(__dirname, '/../client/build')));
-
 //
 // Side bar menu endpoints
 //
@@ -142,11 +139,6 @@ router.get('/chaptertree', async (req, res) => {
 
 // Use router prefix
 app.use('/api', router);
-
-// Catch all other requests
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../client/build/index.html'));
-});
 
 const port = process.env.PORT || 5000;
 app.listen(port);
