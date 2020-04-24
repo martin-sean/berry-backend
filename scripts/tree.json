@@ -1,0 +1,5170 @@
+[
+  {
+    "id": "prologue",
+    "chapter_no": null,
+    "name": "Prologue",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Drive up",
+                "debug_id": "-1"
+              },
+              {
+                "room_no": 2,
+                "name": "Broken driveway 1",
+                "debug_id": "0"
+              },
+              {
+                "room_no": 3,
+                "name": "Birds",
+                "debug_id": "0b"
+              },
+              {
+                "room_no": 4,
+                "name": "Broken driveway 2",
+                "debug_id": "1"
+              },
+              {
+                "room_no": 5,
+                "name": "Granny meeting",
+                "debug_id": "2"
+              },
+              {
+                "room_no": 6,
+                "name": "Learn to dash",
+                "debug_id": "3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "city",
+    "chapter_no": 1,
+    "name": "Forsaken City",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "1"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "2"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "3"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "4"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "3b"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "5"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "5z"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "5a"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Crossing",
+            "abbreviation": "CR",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "6"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "6z"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "6zb"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "7zb"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "6a"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "6b"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "s0"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "s1"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "6c"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "7"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "7z"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "8z"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "8zb"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "8"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "7a"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "9z"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "8b"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "9"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Chasm",
+            "abbreviation": "CH",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "9b"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "9c"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "10"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "10z"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "10zb"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "11z"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "10a"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "12"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "12z"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "12a"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "02b"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Contraption",
+            "abbreviation": "CT",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "04"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "05"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "05b"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "06"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "07"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Scrap Pit",
+            "abbreviation": "SP",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "08"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "08b"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "09"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "10"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "site",
+    "chapter_no": 2,
+    "name": "Old Site",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "start"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "s0"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "s1"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "s2"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "0"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "1"
+              },
+              {
+                "room_no": 7,
+                "name": "Bunker",
+                "debug_id": "2"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "d0"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "d7"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "d8"
+              },
+              {
+                "room_no": 11,
+                "name": "Berry Tunnel",
+                "debug_id": "d3"
+              },
+              {
+                "room_no": 12,
+                "name": "Mirror",
+                "debug_id": "d3"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "d2"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "d9"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "d6"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "d1"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "d4"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "d5"
+              },
+              {
+                "room_no": 19,
+                "name": "Well, what now?",
+                "debug_id": "1"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "3x"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Intervention",
+            "abbreviation": "IV",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "3"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "4"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "5"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "6"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "7"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "8"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "9"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "9b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "10"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "2"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "12b"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "12c"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "12d"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "12"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "13"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Awake",
+            "abbreviation": "AW",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "end_0"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "end_s0"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "end_s1"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "end_1"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "end_2"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "end_3"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "end_4"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "end_3b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "end_3cb"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "end_3c"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "end_5"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "end_6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "start"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "01b"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "02b"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Combination Lock",
+            "abbreviation": "CL",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "03"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "04"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "05"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "06"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "07"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Dream Altar",
+            "abbreviation": "DA",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "08b"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "08"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "09"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "10"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resort",
+    "chapter_no": 3,
+    "name": "Celestial Resort",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "s0"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "s1"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "s2"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "s3"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "0x-a"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "00-a"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "02-a"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "02-b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "01-b"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "00-b"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "00-c"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "0x-b"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "03-a"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "04-b"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "05-a"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "06-a"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "07-a"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "07-b"
+              },
+              {
+                "room_no": 19,
+                "name": "",
+                "debug_id": "06-b"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "06-c"
+              },
+              {
+                "room_no": 21,
+                "name": "",
+                "debug_id": "05-c"
+              },
+              {
+                "room_no": 22,
+                "name": "",
+                "debug_id": "08-c"
+              },
+              {
+                "room_no": 23,
+                "name": "",
+                "debug_id": "08-b"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Huge Mess",
+            "abbreviation": "HM",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "08-a"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "08-x"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "09-b"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "11-x"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "11-y"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "12-y"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "11-z"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "10-z"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "10-y"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "10-x"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "10-c"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "11-c"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "12-c"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "12-d"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "11-d"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "10-d"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "11-b"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "12-b"
+              },
+              {
+                "room_no": 19,
+                "name": "",
+                "debug_id": "13-b"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "13-a"
+              },
+              {
+                "room_no": 21,
+                "name": "",
+                "debug_id": "13-x"
+              },
+              {
+                "room_no": 22,
+                "name": "",
+                "debug_id": "12-x"
+              },
+              {
+                "room_no": 23,
+                "name": "",
+                "debug_id": "11-a"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Elevator Shaft",
+            "abbreviation": "ES",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "09-d"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "08-d"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "06-d"
+              },
+              {
+                "room_no": 4,
+                "name": "Serpentine",
+                "debug_id": "04-d"
+              },
+              {
+                "room_no": 5,
+                "name": "Dust Demo",
+                "debug_id": "04-d"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "04-c"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "02-c"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "03-b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "01-c"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "02-d"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Presidential Suite",
+            "abbreviation": "PS",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00-d"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "roof00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "roof01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "roof02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "roof03"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "roof04"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "roof05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "roof06b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "roof06"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "roof07"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "05"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Staff Quarters",
+            "abbreviation": "SQ",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "06"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "07"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "08"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "09"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "10"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Library",
+            "abbreviation": "LB",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "13"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "14"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "15"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "12"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Rooftop",
+            "abbreviation": "RT",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "16"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "17"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "18"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "19"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "21"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "20"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ridge",
+    "chapter_no": 4,
+    "name": "Golden Ridge",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-01x"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "a-04"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "a-05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "a-06"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "a-07"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "a-08"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "a-09"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "a-10"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "a-11"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Shrine",
+            "abbreviation": "SH",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "b-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "b-sec"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "b-secb"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "b-08b"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "b-08"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Old Trail",
+            "abbreviation": "OT",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-04"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-05"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "c-06"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "c-06b"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "c-09"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "c-07"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "c-08"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "c-10"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Cliff Face",
+            "abbreviation": "CF",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-00b"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "d-05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "d-06"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "d-07"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "d-08"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "d-09"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "d-10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-04"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Stepping Stones",
+            "abbreviation": "SS",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-04"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Gusty Canyon",
+            "abbreviation": "GC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-04"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Eye of the Storm",
+            "abbreviation": "EOTS",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "end"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "temple",
+    "chapter_no": 5,
+    "name": "Mirror Temple",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00x"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-00b"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-00d"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-00c"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "a-04"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "a-05"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "a-06"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "a-07"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "a-08"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "a-09"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "a-10"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "a-11"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "a-12"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "a-13"
+              },
+              {
+                "room_no": 19,
+                "name": "",
+                "debug_id": "a-14"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "a-15"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Depths",
+            "abbreviation": "DP",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-18"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-01c"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-20"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-21"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "b-01b"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "b-07"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "b-08"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "b-09"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "b-10"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "b-11"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "b-12"
+              },
+              {
+                "room_no": 19,
+                "name": "",
+                "debug_id": "b-13"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "b-14"
+              },
+              {
+                "room_no": 21,
+                "name": "",
+                "debug_id": "b-15"
+              },
+              {
+                "room_no": 22,
+                "name": "",
+                "debug_id": "b-16"
+              },
+              {
+                "room_no": 23,
+                "name": "",
+                "debug_id": "b-17"
+              },
+              {
+                "room_no": 24,
+                "name": "",
+                "debug_id": "b-19"
+              },
+              {
+                "room_no": 25,
+                "name": "",
+                "debug_id": "b-22"
+              },
+              {
+                "room_no": 26,
+                "name": "",
+                "debug_id": "void"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Unravelling",
+            "abbreviation": "UR",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-01b"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-01c"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-08b"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "c-08"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "c-10"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "c-12"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "c-07"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "c-11"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "c-09"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "c-13"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Search",
+            "abbreviation": "SC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "d-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "d-06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "d-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "d-09"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "d-10"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "d-13"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "d-15"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "d-19"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "d-19b"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "d-20"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 5,
+            "name": "Rescue",
+            "abbreviation": "RS",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "e-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "e-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "e-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "e-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "e-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "e-06"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "e-05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "e-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "e-08"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "e-09"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "e-10"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "e-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "start"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-02"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Central Chamber",
+            "abbreviation": "CC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "b-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "b-08"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "b-09"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Through the Mirror",
+            "abbreviation": "TTM",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-04"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Mix Master",
+            "abbreviation": "MM",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "d-05"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reflection",
+    "chapter_no": 6,
+    "name": "Reflection",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "start"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Lake",
+            "abbreviation": "LK",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "02b"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Hollows",
+            "abbreviation": "HL",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "04"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "04b"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "04c"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "04d"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "04e"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "08a"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "08b"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "09"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "10a"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "10b"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "11"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "12a"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "12b"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "13"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "14a"
+              },
+              {
+                "room_no": 19,
+                "name": "",
+                "debug_id": "14b"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "15"
+              },
+              {
+                "room_no": 21,
+                "name": "",
+                "debug_id": "16a"
+              },
+              {
+                "room_no": 22,
+                "name": "",
+                "debug_id": "16b"
+              },
+              {
+                "room_no": 23,
+                "name": "",
+                "debug_id": "17"
+              },
+              {
+                "room_no": 24,
+                "name": "",
+                "debug_id": "18a"
+              },
+              {
+                "room_no": 25,
+                "name": "",
+                "debug_id": "18b"
+              },
+              {
+                "room_no": 26,
+                "name": "",
+                "debug_id": "19"
+              },
+              {
+                "room_no": 27,
+                "name": "",
+                "debug_id": "20"
+              },
+              {
+                "room_no": 28,
+                "name": "",
+                "debug_id": "b-00"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Reflection",
+            "abbreviation": "RF",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00b"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-00c"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-02b"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 5,
+            "name": "Rock Bottom",
+            "abbreviation": "RB",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "boss-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "boss-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "boss-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "boss-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "boss-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "boss-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "boss-06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "boss-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "boss-08"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "boss-09"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "boss-10"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "boss-11"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "boss-12"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "boss-13"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "boss-14"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "boss-15"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "boss-16"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "boss-17"
+              },
+              {
+                "room_no": 19,
+                "name": "",
+                "debug_id": "boss-18"
+              },
+              {
+                "room_no": 20,
+                "name": "",
+                "debug_id": "boss-19"
+              },
+              {
+                "room_no": 21,
+                "name": "",
+                "debug_id": "boss-20"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 6,
+            "name": "Resolution",
+            "abbreviation": "RL",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "after-01"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "after-02"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "after-03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "a-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "a-06"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Reflection",
+            "abbreviation": "RF",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "b-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "b-08"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "b-10"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Rock Bottom",
+            "abbreviation": "RB",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-04"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Reprieve",
+            "abbreviation": "RP",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "d-05"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Wallbounces",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "Falling",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 3,
+                "name": "Falling for Kevin",
+                "debug_id": "02"
+              },
+              {
+                "room_no": 4,
+                "name": "Heart Room",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "summit",
+    "chapter_no": 7,
+    "name": "The Summit",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00-intro"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-02b"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "a-04"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "a-04b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "a-05"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "a-06"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "500 M",
+            "abbreviation": "0.5K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-02b"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-02c"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-02d"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "b-02e"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "b-07"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "b-08"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "b-09"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "1000 M",
+            "abbreviation": "1K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-03b"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "c-04"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "c-05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "c-06"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "c-06b"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "c-06c"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "dc-07"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "dc-07b"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "c-08"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "c-09"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "1500 M",
+            "abbreviation": "1.5K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-01b"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-01c"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "d-01d"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "d-03b"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "d-05"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "d-05b"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "d-06"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "d-07"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "d-08"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "d-09"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "d-10"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "d-10b"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "d-11"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 5,
+            "name": "2000 M",
+            "abbreviation": "2K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "e-00b"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "e-00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "e-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "e-01b"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "e-01c"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "e-02"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "e-03"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "e-04"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "e-05"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "e-06"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "e-07"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "e-08"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "e-09"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "e-10"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "e-11"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "e-12"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "e-13"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 6,
+            "name": "2500 M",
+            "abbreviation": "2.5K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "f-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "f-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "f-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "f-02b"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "f-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "f-03"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "f-05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "f-06"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "f-07"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "f-08"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "f-08b"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "f-08d"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "f-08c"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "f-09"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "f-10"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "f-10b"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "f-11"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 7,
+            "name": "3000 M",
+            "abbreviation": "3K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Flag 30",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 2,
+                "name": "Flag 29",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 3,
+                "name": "Flag 28",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 4,
+                "name": "Heart Room",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 5,
+                "name": "Flag 27",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 6,
+                "name": "Flag 26",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 7,
+                "name": "Flag 25",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 8,
+                "name": "Flag 24",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 9,
+                "name": "Flag 23",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 10,
+                "name": "Flag 22",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 11,
+                "name": "Flag 21",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 12,
+                "name": "Flag 20",
+                "debug_id": "g-00b"
+              },
+              {
+                "room_no": 13,
+                "name": "Flag 19",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 14,
+                "name": "Flag 18",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 15,
+                "name": "Flag 17",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 16,
+                "name": "Flag 16",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 17,
+                "name": "Flag 15",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 18,
+                "name": "Flag 14",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 19,
+                "name": "Flag 13",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 20,
+                "name": "Flag 12",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 21,
+                "name": "Flag 11",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 22,
+                "name": "Flag 10",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 23,
+                "name": "Flag 9",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 24,
+                "name": "Flag 8",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 25,
+                "name": "Flag 7",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 26,
+                "name": "Flag 6",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 27,
+                "name": "Flag 5",
+                "debug_id": "g-03"
+              },
+              {
+                "room_no": 28,
+                "name": "Flag 4",
+                "debug_id": "g-03"
+              },
+              {
+                "room_no": 29,
+                "name": "Flag 3",
+                "debug_id": "g-03"
+              },
+              {
+                "room_no": 30,
+                "name": "Flag 2",
+                "debug_id": "g-03"
+              },
+              {
+                "room_no": 31,
+                "name": "Flag 1",
+                "debug_id": "g-03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00-intro"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "500 M",
+            "abbreviation": "0.5K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "1000 M",
+            "abbreviation": "1K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "1500 M",
+            "abbreviation": "1.5K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 5,
+            "name": "2000 M",
+            "abbreviation": "2K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "e-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "e-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "e-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "e-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 6,
+            "name": "2500 M",
+            "abbreviation": "2.5K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "f-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "f-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "f-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "f-03"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 7,
+            "name": "3000 M",
+            "abbreviation": "3K",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Flag 20",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 2,
+                "name": "Flag 19",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 3,
+                "name": "Flag 18",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 4,
+                "name": "Flag 17",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 5,
+                "name": "Flag 16",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 6,
+                "name": "Flag 15",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 7,
+                "name": "Flag 14",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 8,
+                "name": "Flag 13",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 9,
+                "name": "Flag 12",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 10,
+                "name": "Flag 11",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 11,
+                "name": "Flag 10",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 12,
+                "name": "Flag 9",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 13,
+                "name": "Flag 8",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 14,
+                "name": "Flag 7",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 15,
+                "name": "Flag 6",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 16,
+                "name": "Flag 5",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 17,
+                "name": "Flag 4",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 18,
+                "name": "Flag 3",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 19,
+                "name": "Flag 2",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 20,
+                "name": "Flag 1",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 21,
+                "name": "Cassette",
+                "debug_id": "g-03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "02"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "03"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "epilogue",
+    "chapter_no": null,
+    "name": "Epilogue",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "outside"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "inside"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "bridge"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "secret"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core",
+    "chapter_no": 8,
+    "name": "Core",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "0x"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "02"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Into the Core",
+            "abbreviation": "ITC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "b-07b"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "b-07"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Hot and Cold",
+            "abbreviation": "HAC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-00b"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "c-03b"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "c-04"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Heart of the Mountain",
+            "abbreviation": "HOTM",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "d-05"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "d-06"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "d-07"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "d-08"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "d-09"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "d-10"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "d-10b"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "d-10c"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "d-11"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "space"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 2,
+        "name": "B",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "01"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Into the Core",
+            "abbreviation": "ITC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "a-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "a-05"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Burning or Freezing",
+            "abbreviation": "BOF",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "b-05"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Heartbeat",
+            "abbreviation": "HB",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "c-04"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "c-05"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "c-06"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "c-07"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "space"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "side_no": 3,
+        "name": "C",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Heart gate",
+                "debug_id": "intro"
+              },
+              {
+                "room_no": 2,
+                "name": "Hyper tutorial",
+                "debug_id": "00"
+              },
+              {
+                "room_no": 3,
+                "name": "Blocks and bumpers",
+                "debug_id": "01"
+              },
+              {
+                "room_no": 4,
+                "name": "Heart room",
+                "debug_id": "02"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "farewell",
+    "chapter_no": 9,
+    "name": "Farewell",
+    "official": true,
+    "sides": [
+      {
+        "side_no": 1,
+        "name": "A",
+        "official": true,
+        "checkpoints": [
+          {
+            "checkpoint_no": 1,
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Past",
+                "debug_id": "intro-00-past"
+              },
+              {
+                "room_no": 2,
+                "name": "Present",
+                "debug_id": "intro-01-future"
+              },
+              {
+                "room_no": 3,
+                "name": "Clouds",
+                "debug_id": "intro-02-launch"
+              },
+              {
+                "room_no": 4,
+                "name": "Space",
+                "debug_id": "intro-03-space"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 2,
+            "name": "Singular",
+            "abbreviation": "SI",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Start",
+                "debug_id": "a-00"
+              },
+              {
+                "room_no": 2,
+                "name": "Crystal tunnel",
+                "debug_id": "a-01"
+              },
+              {
+                "room_no": 3,
+                "name": "Sliding block",
+                "debug_id": "a-02"
+              },
+              {
+                "room_no": 4,
+                "name": "Block toss",
+                "debug_id": "a-03"
+              },
+              {
+                "room_no": 5,
+                "name": "Spring blocks 1",
+                "debug_id": "a-04"
+              },
+              {
+                "room_no": 6,
+                "name": "Spring blocks 2",
+                "debug_id": "a-05"
+              },
+              {
+                "room_no": 7,
+                "name": "First Fish",
+                "debug_id": "b-00"
+              },
+              {
+                "room_no": 8,
+                "name": "Fish bounce 1",
+                "debug_id": "b-01"
+              },
+              {
+                "room_no": 9,
+                "name": "Fish bounce 2",
+                "debug_id": "b-02"
+              },
+              {
+                "room_no": 10,
+                "name": "Dream fish",
+                "debug_id": "b-03"
+              },
+              {
+                "room_no": 11,
+                "name": "Fish cave",
+                "debug_id": "b-04"
+              },
+              {
+                "room_no": 12,
+                "name": "Fish spring 1",
+                "debug_id": "b-05"
+              },
+              {
+                "room_no": 13,
+                "name": "Fish spring 2",
+                "debug_id": "b-06"
+              },
+              {
+                "room_no": 14,
+                "name": "Electric maze",
+                "debug_id": "b-07"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 3,
+            "name": "Power Source",
+            "abbreviation": "PS",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Start",
+                "debug_id": "c-00"
+              },
+              {
+                "room_no": 2,
+                "name": "Top route 1",
+                "debug_id": "c-alt-00"
+              },
+              {
+                "room_no": 3,
+                "name": "Top route 2",
+                "debug_id": "c-alt-01"
+              },
+              {
+                "room_no": 4,
+                "name": "Bottom route 1",
+                "debug_id": "c-00b"
+              },
+              {
+                "room_no": 5,
+                "name": "Bottom route 2",
+                "debug_id": "c-01"
+              },
+              {
+                "room_no": 6,
+                "name": "Bottom route 3",
+                "debug_id": "c-02"
+              },
+              {
+                "room_no": 7,
+                "name": "Keyskip Jelly",
+                "debug_id": "c-03"
+              },
+              {
+                "room_no": 8,
+                "name": "Locked room",
+                "debug_id": "d-00"
+              },
+              {
+                "room_no": 9,
+                "name": "Bottom left key",
+                "debug_id": "d-01"
+              },
+              {
+                "room_no": 10,
+                "name": "Top left key",
+                "debug_id": "d-02"
+              },
+              {
+                "room_no": 11,
+                "name": "Bottom right key",
+                "debug_id": "d-03"
+              },
+              {
+                "room_no": 12,
+                "name": "Top right key",
+                "debug_id": "d-04"
+              },
+              {
+                "room_no": 13,
+                "name": "Top key/keyskip",
+                "debug_id": "d-05"
+              },
+              {
+                "room_no": 14,
+                "name": "Bubble stars/keyskip",
+                "debug_id": "e-00y"
+              },
+              {
+                "room_no": 15,
+                "name": "Keyskip path",
+                "debug_id": "e-00yb"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 4,
+            "name": "Remembered",
+            "abbreviation": "RM",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Start",
+                "debug_id": "e-00z"
+              },
+              {
+                "room_no": 2,
+                "name": "Cloud fish switch",
+                "debug_id": "e-00"
+              },
+              {
+                "room_no": 3,
+                "name": "Jelly up",
+                "debug_id": "e-00b"
+              },
+              {
+                "room_no": 4,
+                "name": "Falling pillars",
+                "debug_id": "e-01"
+              },
+              {
+                "room_no": 5,
+                "name": "Jelly right",
+                "debug_id": "e-02"
+              },
+              {
+                "room_no": 6,
+                "name": "Fish springs",
+                "debug_id": "e-03"
+              },
+              {
+                "room_no": 7,
+                "name": "Jelly gates",
+                "debug_id": "e-04"
+              },
+              {
+                "room_no": 8,
+                "name": "Fish push",
+                "debug_id": "e-05"
+              },
+              {
+                "room_no": 9,
+                "name": "Aloft fish",
+                "debug_id": "e-05b"
+              },
+              {
+                "room_no": 10,
+                "name": "Fish bounce",
+                "debug_id": "e-05c"
+              },
+              {
+                "room_no": 11,
+                "name": "Glide springs",
+                "debug_id": "e-06"
+              },
+              {
+                "room_no": 12,
+                "name": "Fish scroller",
+                "debug_id": "e-07"
+              },
+              {
+                "room_no": 13,
+                "name": "Jelly scroller",
+                "debug_id": "e-08"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 5,
+            "name": "Event Horizon",
+            "abbreviation": "EH",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Heart gate",
+                "debug_id": "f-door"
+              },
+              {
+                "room_no": 2,
+                "name": "Wavedash Tutorial 1",
+                "debug_id": "f-00"
+              },
+              {
+                "room_no": 3,
+                "name": "Wavedash Tutorial 2",
+                "debug_id": "f-00"
+              },
+              {
+                "room_no": 4,
+                "name": "Wavedash Tutorial 3",
+                "debug_id": "f-01"
+              },
+              {
+                "room_no": 5,
+                "name": "Bird",
+                "debug_id": "f-02"
+              },
+              {
+                "room_no": 6,
+                "name": "Beyond the heart",
+                "debug_id": "f-03"
+              },
+              {
+                "room_no": 7,
+                "name": "Wavedash blocks",
+                "debug_id": "f-04"
+              },
+              {
+                "room_no": 8,
+                "name": "Conveyor",
+                "debug_id": "f-05"
+              },
+              {
+                "room_no": 9,
+                "name": "Kevin",
+                "debug_id": "f-06"
+              },
+              {
+                "room_no": 10,
+                "name": "Conveyor blocks",
+                "debug_id": "f-07"
+              },
+              {
+                "room_no": 12,
+                "name": "Autoscroller",
+                "debug_id": "f-08"
+              },
+              {
+                "room_no": 13,
+                "name": "Bounce switch",
+                "debug_id": "f-09"
+              },
+              {
+                "room_no": 14,
+                "name": "Zipper",
+                "debug_id": "g-00"
+              },
+              {
+                "room_no": 15,
+                "name": "Dash bubbles",
+                "debug_id": "g-01"
+              },
+              {
+                "room_no": 16,
+                "name": "Dream switch",
+                "debug_id": "g-03"
+              },
+              {
+                "room_no": 17,
+                "name": "Moving dream blocks",
+                "debug_id": "g-02"
+              },
+              {
+                "room_no": 18,
+                "name": "Comb",
+                "debug_id": "g-04"
+              },
+              {
+                "room_no": 19,
+                "name": "Cloud gap",
+                "debug_id": "g-05"
+              },
+              {
+                "room_no": 20,
+                "name": "Bird trail",
+                "debug_id": "g-06"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 6,
+            "name": "Determination",
+            "abbreviation": "DT",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Start",
+                "debug_id": "h-00b"
+              },
+              {
+                "room_no": 2,
+                "name": "Sandwich",
+                "debug_id": "h-00"
+              },
+              {
+                "room_no": 3,
+                "name": "Spring scroller",
+                "debug_id": "h-01"
+              },
+              {
+                "room_no": 4,
+                "name": "Wind bubbles",
+                "debug_id": "h-02"
+              },
+              {
+                "room_no": 5,
+                "name": "Airlock",
+                "debug_id": "h-03"
+              },
+              {
+                "room_no": 6,
+                "name": "Stargate",
+                "debug_id": "h-03b"
+              },
+              {
+                "room_no": 7,
+                "name": "Starshaft",
+                "debug_id": "h-04"
+              },
+              {
+                "room_no": 8,
+                "name": "Demo room",
+                "debug_id": "h-04b"
+              },
+              {
+                "room_no": 9,
+                "name": "Tri-switch",
+                "debug_id": "h-05"
+              },
+              {
+                "room_no": 10,
+                "name": "Falling pillars",
+                "debug_id": "h-06"
+              },
+              {
+                "room_no": 11,
+                "name": "Fire and Ice",
+                "debug_id": "h-06b"
+              },
+              {
+                "room_no": 12,
+                "name": "Wind dash",
+                "debug_id": "h-07"
+              },
+              {
+                "room_no": 13,
+                "name": "Windsprings",
+                "debug_id": "h-07"
+              },
+              {
+                "room_no": 14,
+                "name": "Conveyor",
+                "debug_id": "h-08"
+              },
+              {
+                "room_no": 15,
+                "name": "Kevin",
+                "debug_id": "h-09"
+              },
+              {
+                "room_no": 16,
+                "name": "Feathers and stars",
+                "debug_id": "h-10"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 7,
+            "name": "Stubbornness",
+            "abbreviation": "SB",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "Start",
+                "debug_id": "i-00"
+              },
+              {
+                "room_no": 2,
+                "name": "Bounce or grab",
+                "debug_id": "i-00b"
+              },
+              {
+                "room_no": 3,
+                "name": "Spring blocks",
+                "debug_id": "i-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "i-02"
+              },
+              {
+                "room_no": 5,
+                "name": "Crystal columns",
+                "debug_id": "i-03"
+              },
+              {
+                "room_no": 6,
+                "name": "Bubble lock",
+                "debug_id": "i-04"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "i-05"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 8,
+            "name": "Reconciliation",
+            "abbreviation": "RC",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "j-00"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "j-00b"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "j-01"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "j-02"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "j-03"
+              },
+              {
+                "room_no": 6,
+                "name": "",
+                "debug_id": "j-04"
+              },
+              {
+                "room_no": 7,
+                "name": "",
+                "debug_id": "j-05"
+              },
+              {
+                "room_no": 8,
+                "name": "",
+                "debug_id": "j-06"
+              },
+              {
+                "room_no": 9,
+                "name": "",
+                "debug_id": "j-07"
+              },
+              {
+                "room_no": 10,
+                "name": "",
+                "debug_id": "j-08"
+              },
+              {
+                "room_no": 11,
+                "name": "",
+                "debug_id": "j-09"
+              },
+              {
+                "room_no": 12,
+                "name": "",
+                "debug_id": "j-10"
+              },
+              {
+                "room_no": 13,
+                "name": "",
+                "debug_id": "j-11"
+              },
+              {
+                "room_no": 14,
+                "name": "",
+                "debug_id": "j-12"
+              },
+              {
+                "room_no": 15,
+                "name": "",
+                "debug_id": "j-13"
+              },
+              {
+                "room_no": 16,
+                "name": "",
+                "debug_id": "j-14"
+              },
+              {
+                "room_no": 17,
+                "name": "",
+                "debug_id": "j-14b"
+              },
+              {
+                "room_no": 18,
+                "name": "",
+                "debug_id": "j-15"
+              }
+            ]
+          },
+          {
+            "checkpoint_no": 9,
+            "name": "Farewell",
+            "abbreviation": "FW",
+            "rooms": [
+              {
+                "room_no": 1,
+                "name": "",
+                "debug_id": "j-16"
+              },
+              {
+                "room_no": 2,
+                "name": "",
+                "debug_id": "j-17"
+              },
+              {
+                "room_no": 3,
+                "name": "",
+                "debug_id": "j-18"
+              },
+              {
+                "room_no": 4,
+                "name": "",
+                "debug_id": "j-19"
+              },
+              {
+                "room_no": 5,
+                "name": "",
+                "debug_id": "end-golden"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
