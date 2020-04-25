@@ -23,8 +23,10 @@ exports.up = (knex: Knex): Promise<any> => {
       .inTable('checkpoint')
       .index();
     table
-      .string('nickname', 24)
+      .string('nickname', 32)
       .index();
+    table
+      .string('image', 12)
     table
       .timestamps(true, true);
   });

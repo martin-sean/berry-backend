@@ -302,7 +302,7 @@ exports.seed = async (knex: Knex) => {
     { id: 4025, 		room_no: 12, 		checkpoint_id: 401, 		debug_id: 'b-05', 		image: '0025',		nickname: 'Main path scroller' },
     { id: 4026, 		room_no: 13, 		checkpoint_id: 401, 		debug_id: 'b-08b', 		image: '0026',		nickname: 'Scroller tracks' },
     { id: 4027, 		room_no: 14, 		checkpoint_id: 401, 		debug_id: 'b-08', 		image: '0027',		nickname: 'First autoscroller' },
-31
+
     { id: 4028, 		room_no: 1, 		checkpoint_id: 402, 		debug_id: 'c-00', 		image: '0028',		nickname: 'Old trail start' },
     { id: 4029, 		room_no: 2, 		checkpoint_id: 402, 		debug_id: 'c-01', 		image: '0029',		nickname: 'Winged berry' },
     { id: 4030, 		room_no: 3, 		checkpoint_id: 402, 		debug_id: 'c-02', 		image: '0030',		nickname: 'Windy bubbles' },
@@ -882,8 +882,8 @@ exports.seed = async (knex: Knex) => {
     { id: 8219, 		room_no: 5, 		checkpoint_id: 807, 		debug_id: 'c-05', 		image: '0019',		nickname: 'Floor and ceiling' },
     { id: 8220, 		room_no: 6, 		checkpoint_id: 807, 		debug_id: 'c-06', 		image: '0020',		nickname: 'Ball snake' },
     { id: 8221, 		room_no: 7, 		checkpoint_id: 807, 		debug_id: 'c-08', 		image: '0021',		nickname: 'Conveyor switch' },
-    { id: 8221, 		room_no: 7, 		checkpoint_id: 807, 		debug_id: 'c-07', 		image: '0022',		nickname: 'Jank blocks' },
-    { id: 8222, 		room_no: 8, 		checkpoint_id: 807, 		debug_id: 'space', 		image: '0023',		nickname: 'Cassette room' },
+    { id: 8222, 		room_no: 7, 		checkpoint_id: 807, 		debug_id: 'c-07', 		image: '0022',		nickname: 'Jank blocks' },
+    { id: 8223, 		room_no: 8, 		checkpoint_id: 807, 		debug_id: 'space', 		image: '0023',		nickname: 'Cassette room' },
 
     // 8C //
     { id: 8401, 		room_no: 1, 		checkpoint_id: 808, 		debug_id: 'intro', 	  image: '0001',		nickname: 'Heart gate' },
