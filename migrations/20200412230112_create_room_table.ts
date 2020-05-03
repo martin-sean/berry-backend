@@ -26,9 +26,9 @@ exports.up = (knex: Knex): Promise<any> => {
       .string('nickname', 32)
       .index();
     table
-      .string('image', 12)
-    table
       .timestamps(true, true);
+    table
+      .unique(['checkpoint_id', 'room_no']);
   });
 }
 

@@ -14,9 +14,26 @@ exports.up = (knex: Knex): Promise<any> => {
       .onDelete('SET NULL')
       .index();
     table
+      .string('chapter_id', 12)
+      .notNullable()
+      .index()
+    table
+      .integer('side_no')
+      .unsigned()
+      .index()
+    table
+      .integer('checkpoint_no')
+      .unsigned()
+      .index()
+    table
+      .integer('room_no')
+      .unsigned()
+      .index()
+    table
+      .index(['chapter_id', 'side_no', 'checkpoint_no', 'room_no']);
+    table
       .string('video_id', 11)
       .notNullable()
-      .index();
     table
       .integer('start')
       .unsigned()

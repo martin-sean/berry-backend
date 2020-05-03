@@ -24,6 +24,8 @@ exports.up = (knex: Knex): Promise<any> => {
       .index()
     table
       .timestamps(true, true);
+    table
+      .unique(['side_id', 'checkpoint_no']);
   });
 }
 

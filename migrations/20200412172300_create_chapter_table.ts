@@ -23,6 +23,8 @@ exports.up = (knex: Knex): Promise<any> => {
       .index();
     table
       .timestamps(true, true);
+    table
+      .unique(['id', 'chapter_no']);
   });
 }
 

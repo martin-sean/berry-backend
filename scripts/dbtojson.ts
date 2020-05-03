@@ -32,34 +32,36 @@ export interface Checkpoint {
 export interface Room {
   name: string,
   debug_id: string,
+  image?: string,
 }
 
 interface OldChapter {
-  id: string;
-  chapter_no?: any;
-  name: string;
+  id: string,
+  chapter_no?: any,
+  name: string,
   official: boolean;
-  sides: OldSide[];
+  sides: OldSide[],
 }
 
 interface OldSide {
-  side_no: number;
-  name: string;
-  official: boolean;
-  checkpoints: OldCheckpoint[];
+  side_no: number,
+  name: string,
+  official: boolean,
+  checkpoints: OldCheckpoint[],
 }
 
 interface OldCheckpoint {
-  checkpoint_no: number;
-  name: string;
-  abbreviation: string;
-  rooms: OldRoom[];
+  checkpoint_no: number,
+  name: string,
+  abbreviation: string,
+  rooms: OldRoom[],
 }
 
 interface OldRoom {
-    room_no: number;
-    name: string;
-    debug_id: string;
+    room_no: number,
+    name: string,
+    debug_id: string,
+    image?: string,
 }
 
 const chapters: OldChapter[] = tree;
@@ -95,6 +97,7 @@ chapters.forEach((chapter: OldChapter) => {
         const newRoom: Room = {
           name: room.name,
           debug_id: room.debug_id,
+          image: room.image,
         }
         newCheck.rooms[room.room_no] = newRoom;
       });

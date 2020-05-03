@@ -28,7 +28,8 @@ chapters.forEach(function (chapter) {
             checkpoint.rooms.forEach(function (room) {
                 var newRoom = {
                     name: room.name,
-                    debug_id: room.debug_id
+                    debug_id: room.debug_id,
+                    image: room.image
                 };
                 newCheck.rooms[room.room_no] = newRoom;
             });
