@@ -131,7 +131,7 @@ router.get('/chaptertree', async (req, res) => {
         builder.select('checkpoint_no', 'name', 'abbreviation')
       },
       modifyRoom(builder) {
-        builder.select('room_no', 'nickname as name', 'debug_id', 'image');
+        builder.select('room_no', 'nickname as name', 'debug_id');
       }
     })
   );
