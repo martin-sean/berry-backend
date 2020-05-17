@@ -8,7 +8,7 @@ const router = express.Router();
 type AuthResponse = { idToken: string }
 
 // Google authentication
-router.get('/signin', async (req, res) => {
+router.post('/signin', async (req, res) => {
   const authResponse = req.body as AuthResponse;
   const client = new OAuth2Client(CLIENT_ID);
   const ticket = await client.verifyIdToken({
@@ -18,9 +18,13 @@ router.get('/signin', async (req, res) => {
   const payload = ticket.getPayload();
   const userId = payload && payload['sub'];
 
+  console.log(`Userid: ${ userId }`)
+
   if (userId) {
     const account = await Account.query().findById(userId);
+    console.log(`account: ${ account }`)
     if (!account) {
+      console.log(`No account`)
       await Account.query().insert({
         id: parseInt(userId),
       });

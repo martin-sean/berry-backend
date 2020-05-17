@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import Knex from 'knex';
-import * as KnexConfig from './knexfile';
+import * as KnexConfig from '../knexfile';
 
 import { Model } from 'objection';
 
