@@ -7,14 +7,15 @@ import NicknameSuggestion from './NicknameSuggestion';
 
 export default class Account extends Model {
   id!: number;
-  external_id?: string;
+  external_id!: string;
+  moderator?: boolean;
   username?: string;
   
   static tableName = 'account';
   
   static jsonSchema = {
     type: 'object',
-    required: ['id, externalId'],
+    required: ['external_id'],
     properties: {
       id: { type: 'integer' },
       username: { type: 'string', minLength: 3, maxLength: 20 },

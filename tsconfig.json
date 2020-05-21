@@ -12,8 +12,8 @@
   },
   /* Exclude client react folder */
   "exclude": [
-    "src/migrations",
-    "src/seeds",
+    "migrations",
+    "seeds",
     "build"
   ]
 }
