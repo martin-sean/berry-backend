@@ -10,6 +10,9 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "src"
   },
+  "include": [
+    "src"
+  ],
   /* Exclude client react folder */
   "exclude": [
     "migrations",

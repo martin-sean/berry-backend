@@ -31,7 +31,16 @@ const createRefreshToken = (account: Account) => {
 }
 
 export const sendRefreshToken = (res: Response, account: Account) => {
-  res.cookie(refreshTokenName, createRefreshToken(account), { httpOnly: true });
+  res.cookie(
+    refreshTokenName,
+    createRefreshToken(account),
+    // Expire in 7 days
+    // { httpOnly: true, sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 * 1000 }
+    // Expire at end of session, use maxAge: 7 * 24 * 60 * 60 * 1000 
+    // Secure HTTPS to use in production
+    // { httpOnly: true, sameSite: 'strict', secure: true } 
+    { httpOnly: true, sameSite: 'strict' } 
+  );
 }
 
 export const clearRefreshToken = (res: Response) => {

@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import Account from '../data/models/Account';
 
-// Middleware to check if the user is a moderator and can access the protected resource
-export const checkModerator = (mod: boolean) => {
+// Check if account is a moderator and can access the protected function
+export default (mod: boolean) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     // Get the user id
     const account = res.locals.account as Account;

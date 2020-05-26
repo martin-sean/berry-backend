@@ -8,10 +8,11 @@ import { Model } from 'objection';
 import cors from 'cors';
 import helmet from 'helmet';
 import bodyParser from 'body-parser';
-
-import ChapterRouter from './routes/chapters';
-import AuthenticateRouter from './routes/auth';
 import cookieParser from 'cookie-parser';
+
+import ChapterRouter from './routes/chapter';
+import AuthenticateRouter from './routes/auth';
+import UserRouter from './routes/user';
 
 const app = express();
 const router = express.Router();
@@ -33,6 +34,7 @@ app.use(bodyParser.json());
 // Routes
 router.use('/chapter', ChapterRouter);
 router.use('/auth', AuthenticateRouter);
+router.use('/user', UserRouter);
 
 // Router version 1
 app.use('/v1', router);

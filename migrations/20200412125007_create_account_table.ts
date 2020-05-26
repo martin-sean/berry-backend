@@ -16,6 +16,7 @@ exports.up = (knex: Knex): Promise<any> => {
       .index();
     table
       .string('username')
+      .index();
     table
       .timestamps(true, true);
     table

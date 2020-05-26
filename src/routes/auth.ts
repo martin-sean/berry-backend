@@ -1,21 +1,31 @@
 import express from 'express';
-import { OAuth2Client } from 'google-auth-library';
-import { createAccessToken, RefreshToken, sendRefreshToken, clearRefreshToken } from '../utils/auth';
+
 import Account from '../data/models/Account';
 import { verify } from 'jsonwebtoken';
-const router = express.Router();
+import { OAuth2Client } from 'google-auth-library';
+import { createAccessToken, RefreshToken, sendRefreshToken, clearRefreshToken } from '../utils/auth';
 
 export const CLIENT_ID = "308764093187-1tds1qnccfdit8bfs2f3q8cv7h405dt9.apps.googleusercontent.com";
 
+const router = express.Router();
+
+// Check if username is available
+router.get('/checkusername/:username', async (req, res) => {
+  const { username } = req.params;
+  const account = await Account.query()
+    .select('username', 'moderator', 'created_at')
+    .where('username', '=', username)
+    .first();
+  res.status(200).json({ available: !account });
+});
 
 // Login or create an account when user clicks the google sign in button
 router.post('/login', async (req, res) => {
-  type AuthResponse = { idToken: string }
-
-  const authResponse = req.body as AuthResponse;
+  type AuthRequest = { idToken: string }
+  const authRequest = req.body as AuthRequest;
   const client = new OAuth2Client(CLIENT_ID);
   const ticket = await client.verifyIdToken({
-    idToken: authResponse.idToken,
+    idToken: authRequest.idToken,
     audience: CLIENT_ID,
   });
   const payload = ticket.getPayload();
@@ -41,7 +51,6 @@ router.post('/login', async (req, res) => {
   return res.status(400).send();
 });
 
-
 // Refresh an expired access token
 router.post('/refresh', async (req, res) => {
   const refreshToken = req.cookies.rid as string;
@@ -50,15 +59,12 @@ router.post('/refresh', async (req, res) => {
     return res.status(401).send();
   }
 
-  let payload: RefreshToken;
   try {
-    payload = verify(refreshToken, process.env.RT_SECRET!) as RefreshToken;
+    const payload = verify(refreshToken, process.env.RT_SECRET!) as RefreshToken;
     const account = await Account.query().findById(payload.userId);
     // Validate account exists for id
     if (!account) throw new Error("Account could not be found");
 
-    // Send a new refresh token
-    sendRefreshToken(res, account);
     // Return a new access token
     return res.status(200).send(createAccessToken(account));
   } catch (error) {
@@ -70,11 +76,6 @@ router.post('/refresh', async (req, res) => {
 // Clear the user's refresh cookie to log the user out
 router.get('/logout', async (req, res) => {
   return clearRefreshToken(res);
-});
-
-// Get a list of the current users for testing purposes
-router.get('/users', async (req, res) => {
-  res.json(await Account.query());
 });
 
 export default router;
