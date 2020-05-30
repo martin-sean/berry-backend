@@ -9,14 +9,12 @@ const usernamePattern = new RegExp('^\\w+$');
 
 // Authorise the current user
 router.get('/current', isAuth, async (req, res) => {
-  const account = res.locals.account as Account;
+  const account = Account.query().findById(res.locals.account);
   return res.status(200).json(account);
 });
 
 // Update the current user (Just username for now)
 router.patch('/current', isAuth, async (req, res) => {
-  const account = res.locals.account as Account;
-
   type PatchRequest = { username: string }
   const username = (req.body as PatchRequest).username;
 
@@ -25,10 +23,10 @@ router.patch('/current', isAuth, async (req, res) => {
     console.log("Username not valid");
     return res.status(400).send();
   }
-
+    
   try {
     const updatedAccount = await Account.query()
-      .findById(account.id)
+      .findById(res.locals.userId)
       .patch({ username: username })
       .returning('*');
     // Small hack, typescript appears to be wrong, updatedAccount should not be an array
@@ -42,7 +40,6 @@ router.patch('/current', isAuth, async (req, res) => {
 
 // Delete the user's account
 router.delete('/current', isAuth, async (req, res) => {
-  const account = res.locals.account as Account;
   type DeleteRequest = { 'deleteAccount': boolean, 'deleteClips': boolean };
   const deleteAccount = (req.body as DeleteRequest).deleteAccount;
   const deleteClips = (req.body as DeleteRequest).deleteClips;
@@ -57,8 +54,8 @@ router.delete('/current', isAuth, async (req, res) => {
     }
 
     try {
-      const deletedAccount = await Account.query().deleteById(account.id);
-      console.log(`Deleted account #${ account.id }`);
+      await Account.query().deleteById(res.locals.account);
+      console.log(`Deleted account #${ res.locals.account }`);
     } catch (error) {
       console.log(error);
       return res.status(500).send();
