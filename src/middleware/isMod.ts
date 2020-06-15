@@ -4,14 +4,15 @@ import Account from '../data/models/Account';
 // Check if account is a moderator and can access the protected function
 export default (mod: boolean) => {
   return async (req: Request, res: Response, next: NextFunction) => {
-    // Get the user id
-    const account = res.locals.account as Account;
+    // Check if a moderator
+    const idMod = res.locals.isMod as boolean;
 
     // Check if account exists and is a moderator
-    if (account && account.moderator) {
+    if (idMod) {
       next();
     } else {
-      res.status(401).send();
+      // Not authorized
+      return res.status(401).send();
     }
   }
 }

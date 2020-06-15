@@ -9,8 +9,13 @@ const usernamePattern = new RegExp('^\\w+$');
 
 // Authorise the current user
 router.get('/current', isAuth, async (req, res) => {
-  const account = Account.query().findById(res.locals.account);
-  return res.status(200).json(account);
+  try {
+    const account = Account.query().findById(res.locals.account);
+    return res.status(200).json(account);
+  } catch (error) {
+    // User not found
+    return res.status(404).send();
+  }
 });
 
 // Update the current user (Just username for now)
@@ -41,13 +46,12 @@ router.patch('/current', isAuth, async (req, res) => {
 // Delete the user's account
 router.delete('/current', isAuth, async (req, res) => {
   type DeleteRequest = { 'deleteAccount': boolean, 'deleteClips': boolean };
-  const deleteAccount = (req.body as DeleteRequest).deleteAccount;
-  const deleteClips = (req.body as DeleteRequest).deleteClips;
+  const deleteRequest = req.body as DeleteRequest;
 
   // Check if the user really wants to delete their account
-  if (deleteAccount) {
+  if (deleteRequest.deleteAccount) {
     // Delete all of a user's clips first and associated tags
-    if (deleteClips) {
+    if (deleteRequest.deleteClips) {
       // TODO: Find and delete all clips
     } else {
       // Todo: Make all their clips anonymous
@@ -57,12 +61,14 @@ router.delete('/current', isAuth, async (req, res) => {
       await Account.query().deleteById(res.locals.account);
       console.log(`Deleted account #${ res.locals.account }`);
     } catch (error) {
+      // Error occured during deletion, account doesn't exist or connection is broken
       console.log(error);
       return res.status(500).send();
     }
     // Account successfully deleted
     return res.status(204).send();
   }
+
   // Request completed, delete account was not specified
   return res.status(400).send();
 });

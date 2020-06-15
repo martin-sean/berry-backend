@@ -7,27 +7,23 @@ exports.up = (knex: Knex): Promise<any> => {
     table
       .increments();
     table
-      .integer('account_id')
-      .unsigned()
-      .references('id')
-      .inTable('account')
-      .onDelete('SET NULL')
-      .index();
-    table
       .string('chapter_id', 12)
       .notNullable()
       .index()
     table
       .integer('side_no')
       .unsigned()
+      .notNullable()
       .index()
     table
       .integer('checkpoint_no')
       .unsigned()
+      .notNullable()
       .index()
     table
       .integer('room_no')
       .unsigned()
+      .notNullable()
       .index()
     table
       .index(['chapter_id', 'side_no', 'checkpoint_no', 'room_no']);
@@ -35,13 +31,20 @@ exports.up = (knex: Knex): Promise<any> => {
       .string('video_id', 11)
       .notNullable()
     table
-      .integer('start')
+      .integer('start_time')
       .unsigned()
       .notNullable();
     table
-      .integer('end')
+      .integer('end_time')
       .unsigned()
       .notNullable();
+    table
+      .integer('account_id')
+      .unsigned()
+      .references('id')
+      .inTable('account')
+      .onDelete('SET NULL')
+      .index();
     table
       .string('name', 24);
     table

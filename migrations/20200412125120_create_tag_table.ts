@@ -7,7 +7,7 @@ exports.up = (knex: Knex): Promise<any> => {
     table
       .increments();
     table
-      .string('name', 24)
+      .string('name', 20)
       .notNullable();
     table
       .timestamps(true, true);

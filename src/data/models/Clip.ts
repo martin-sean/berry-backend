@@ -5,22 +5,34 @@ import Comment from './Comment';
 
 export default class Clip extends Model {
   id!: number;
-  account_id!: number;
+  chapter_id!: number;
+  side_no!: number;
+  checkpoint_no!: number;
+  room_no!: number;
   video_id!: string;
   start_time!: number;
   end_time!: number;
+  account_id?: number;
+  name?: string;
+  desc?: string;
 
   static tableName = 'clip';
 
   static jsonSchema = {
     type: 'object',
-    required: ['account_id', 'video_id', 'start_time', 'end_time'],
+    required: ['chapter_id', 'side_no', 'checkpoint_no', 'room_no', 'video_id', 'start_time', 'end_time'],
     properties: {
       id: { type: 'integer' },
-      account_id: { type: 'integer' },
-      video_id: { type: 'string', minLength: 1, maxLength: 255 },
+      chapter_id: { type: 'string', maxLength: 12 },
+      side_no: { type: 'number' },
+      checkpoint_no: { type: 'number' },
+      room: { type: 'number' },
+      video_id: { type: 'string', minLength: 11, maxLength: 11 },
       start_time: { type: 'number' },
       end_time: { type: 'number' },
+      account_id: { type: 'integer' },
+      name: { type: 'string', minLength: 1, maxLength: 64 },
+      desc: { type: 'string', minLength: 1, maxLength: 256 },
     }
   }
 
