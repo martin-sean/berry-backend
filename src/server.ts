@@ -13,6 +13,7 @@ import cookieParser from 'cookie-parser';
 import ChapterRouter from './routes/chapter';
 import AuthenticateRouter from './routes/auth';
 import UserRouter from './routes/user';
+import ClipRouter from './routes/clip';
 
 const app = express();
 const router = express.Router();
@@ -35,6 +36,7 @@ app.use(bodyParser.json());
 router.use('/chapter', ChapterRouter);
 router.use('/auth', AuthenticateRouter);
 router.use('/user', UserRouter);
+router.use('/clip', ClipRouter);
 
 // Router version 1
 app.use('/v1', router);

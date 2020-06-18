@@ -1,16 +1,13 @@
 import { Request, Response, NextFunction } from 'express';
 import { verify } from 'jsonwebtoken';
-import { AccessToken, createAccessToken } from '../utils/auth';
+import { AccessToken } from '../utils/auth';
 
 export default async (req: Request, res: Response, next: NextFunction) => {
-  // Get JWT token from head
+  // Get authorization header
   const authorization = req.headers['authorization'];
 
   // Check if the authorization header was provided
-  if (!authorization) {
-    // Unauthorised
-    return res.status(401).send();
-  }
+  if (!authorization) return res.status(401).send();
 
   // Validate
   try {

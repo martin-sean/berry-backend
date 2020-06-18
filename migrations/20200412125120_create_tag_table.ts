@@ -8,7 +8,9 @@ exports.up = (knex: Knex): Promise<any> => {
       .increments();
     table
       .string('name', 20)
-      .notNullable();
+      .notNullable()
+      .unique()
+      .index();
     table
       .timestamps(true, true);
   })

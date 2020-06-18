@@ -3,16 +3,13 @@
     "resolveJsonModule": true,
     "target": "es6",
     "module": "commonjs",
-    // "lib": [],
     "outDir": "./build",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src"
+    "moduleResolution": "node",
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   /* Exclude client react folder */
   "exclude": [
     "migrations",

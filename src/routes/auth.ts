@@ -4,25 +4,26 @@ import Account from '../data/models/Account';
 import { verify } from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
 import { createAccessToken, RefreshToken, sendRefreshToken, clearRefreshToken } from '../utils/auth';
+import isAuth from '../middleware/isAuth';
 
 export const CLIENT_ID = "308764093187-1tds1qnccfdit8bfs2f3q8cv7h405dt9.apps.googleusercontent.com";
 
 const router = express.Router();
 
 // Check if username is available
-router.get('/checkusername/:username', async (req, res) => {
+router.get('/checkusername/:username', isAuth, async (req, res) => {
   const { username } = req.params;
   const account = await Account.query()
     .select('username', 'moderator', 'created_at')
-    .where('username', '=', username)
+    .where('username', username)
     .first();
-  res.status(200).json({ available: !account });
+  res.status(200).json({ available: !Boolean(account) });
 });
 
 // Login or create an account when user clicks the google sign in button
 router.post('/login', async (req, res) => {
   type AuthRequest = { idToken: string }
-  const authRequest = req.body as AuthRequest;
+  const authRequest: AuthRequest = req.body;
   const client = new OAuth2Client(CLIENT_ID);
   const ticket = await client.verifyIdToken({
     idToken: authRequest.idToken,

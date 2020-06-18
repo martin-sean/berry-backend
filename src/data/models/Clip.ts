@@ -5,7 +5,7 @@ import Comment from './Comment';
 
 export default class Clip extends Model {
   id!: number;
-  chapter_id!: number;
+  chapter_id!: string;
   side_no!: number;
   checkpoint_no!: number;
   room_no!: number;
@@ -14,7 +14,7 @@ export default class Clip extends Model {
   end_time!: number;
   account_id?: number;
   name?: string;
-  desc?: string;
+  description?: string;
 
   static tableName = 'clip';
 
@@ -32,7 +32,7 @@ export default class Clip extends Model {
       end_time: { type: 'number' },
       account_id: { type: 'integer' },
       name: { type: 'string', minLength: 1, maxLength: 64 },
-      desc: { type: 'string', minLength: 1, maxLength: 256 },
+      description: { type: 'string', minLength: 1, maxLength: 256 },
     }
   }
 

@@ -10,7 +10,7 @@ const usernamePattern = new RegExp('^\\w+$');
 // Authorise the current user
 router.get('/current', isAuth, async (req, res) => {
   try {
-    const account = Account.query().findById(res.locals.account);
+    const account = Account.query().findById(res.locals.userId);
     return res.status(200).json(account);
   } catch (error) {
     // User not found
@@ -58,8 +58,8 @@ router.delete('/current', isAuth, async (req, res) => {
     }
 
     try {
-      await Account.query().deleteById(res.locals.account);
-      console.log(`Deleted account #${ res.locals.account }`);
+      await Account.query().deleteById(res.locals.userId);
+      console.log(`Deleted account #${ res.locals.userId }`);
     } catch (error) {
       // Error occured during deletion, account doesn't exist or connection is broken
       console.log(error);

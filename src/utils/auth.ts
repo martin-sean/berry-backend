@@ -1,6 +1,6 @@
 import { sign } from 'jsonwebtoken';
 import { Response } from 'express';
-import Account from 'data/models/Account';
+import Account from '../data/models/Account';
 
 const refreshTokenName = 'rid';
 
@@ -44,5 +44,5 @@ export const sendRefreshToken = (res: Response, account: Account) => {
 }
 
 export const clearRefreshToken = (res: Response) => {
-  return res.clearCookie(refreshTokenName).send();
+  return res.status(200).clearCookie(refreshTokenName).send();
 }
