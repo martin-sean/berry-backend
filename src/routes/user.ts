@@ -2,6 +2,7 @@ import express from 'express';
 import Account from '../data/models/Account';
 import isAuth from '../middleware/isAuth';
 import { createAccessToken } from '../utils/auth';
+import Clip from '../data/models/Clip';
 
 const router = express.Router();
 
@@ -47,30 +48,43 @@ router.patch('/current', isAuth, async (req, res) => {
 router.delete('/current', isAuth, async (req, res) => {
   type DeleteRequest = { 'deleteAccount': boolean, 'deleteClips': boolean };
   const deleteRequest = req.body as DeleteRequest;
-
   // Check if the user really wants to delete their account
-  if (deleteRequest.deleteAccount) {
-    // Delete all of a user's clips first and associated tags
-    if (deleteRequest.deleteClips) {
-      // TODO: Find and delete all clips
-    } else {
-      // Todo: Make all their clips anonymous
-    }
+  if (!deleteRequest.deleteAccount) return res.status(422).send();
 
-    try {
-      await Account.query().deleteById(res.locals.userId);
+  try {
+    // Create a new transaction to delete account and update related clips
+    await Account.transaction(async tsx => {
+      if (deleteRequest.deleteClips) {
+        // Get all clips
+        const clips = await Account.relatedQuery('clips', tsx);
+        
+        clips.map(async (clip, index) => {
+          const tags = await clip.$relatedQuery('tags', tsx);
+          tags.map( async (tag, index) => {
+            const clipCount = await tag.$relatedQuery('clips', tsx).resultSize();
+            if (clipCount === 1) await tag.$query(tsx).delete();
+          });
+        });
+          
+        // Try and do in one query
+        await Account.relatedQuery('clips', tsx)
+          
+
+        // Delete a users clips
+        await Account.relatedQuery('clips', tsx)
+          .for(res.locals.userId)
+          .delete();
+      }
+      await Account.query(tsx).deleteById(res.locals.userId);
       console.log(`Deleted account #${ res.locals.userId }`);
-    } catch (error) {
-      // Error occured during deletion, account doesn't exist or connection is broken
-      console.log(error);
-      return res.status(500).send();
-    }
+    });
     // Account successfully deleted
     return res.status(204).send();
+  // Error occured during deletion, account doesn't exist or connection is broken
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).send();
   }
-
-  // Request completed, delete account was not specified
-  return res.status(400).send();
 });
 
 // Publicly accessible user information. Get a user by username

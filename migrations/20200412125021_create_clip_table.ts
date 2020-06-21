@@ -41,14 +41,17 @@ exports.up = (knex: Knex): Promise<any> => {
     table
       .integer('account_id')
       .unsigned()
+      .nullable()
       .references('id')
       .inTable('account')
       .onDelete('SET NULL')
       .index();
     table
-      .string('name', 24);
+      .string('name', 64)
+      .nullable();
     table
-      .string('description', 255);
+      .string('description', 256)
+      .nullable();
     table
       .timestamps(true, true);
   });

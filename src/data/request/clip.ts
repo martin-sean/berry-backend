@@ -46,11 +46,11 @@ const validChapter = (chapterId: string) => {
 
 // Check if a tag is valid
 const validTag = (tag: string) => {
-  return tag.length >= 1 && tag.length <= 20 && tag.match(tagPattern);
+  return tag.length > 0 && tag.length <= 20 && tag.match(tagPattern);
 }
 
 // Return true if a string is numeric 
 const isPositiveNo = (stringNo: string | number): boolean => {
   const num = Number(stringNo);
-  return !isNaN(num) && num > 0;
+  return !isNaN(num) && num >= 0;
 }

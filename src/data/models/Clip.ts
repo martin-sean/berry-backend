@@ -38,16 +38,16 @@ export default class Clip extends Model {
 
   static relationMappings = () => ({
     // The Account that created the clip
-    authorAccount: {
+    author: {
       relation: Model.BelongsToOneRelation,
       modelClass: Account,
       join: {
-        from: 'account_id',
+        from: 'clip.account_id',
         to: 'account.id'
       },
     },
     // Accounts a clip is liked by
-    likingAccounts: {
+    likes: {
       relation: Model.ManyToManyRelation,
       modelClass: Account,
       join: {
@@ -73,7 +73,7 @@ export default class Clip extends Model {
       },
     },
     // Accounts who have commented on this clip
-    commentingAccounts: {
+    commenters: {
       relation: Model.ManyToManyRelation,
       modelClass: Account,
       join: {
