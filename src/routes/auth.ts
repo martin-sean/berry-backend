@@ -15,8 +15,7 @@ router.get('/checkusername/:username', isAuth, async (req, res) => {
   const { username } = req.params;
   const account = await Account.query()
     .select('username', 'moderator', 'created_at')
-    .where('username', username)
-    .first();
+    .findOne('username', username);
   res.status(200).json({ available: !Boolean(account) });
 });
 
@@ -35,7 +34,7 @@ router.post('/login', async (req, res) => {
   // Confirm that exteral id was included in the request
   if (exteralId) {
     // Search for an account with the external id
-    let account = await Account.query().where({ external_id: exteralId }).first();
+    let account = await Account.query().findOne('external_id', exteralId);
     // Create a new account if one does not exist
     if (!account) {
       console.log(`Creating account`)

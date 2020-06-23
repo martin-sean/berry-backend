@@ -3,7 +3,7 @@ import isAuth from '../middleware/isAuth';
 import Clip from '../data/models/Clip';
 import { ClipData, clipDataValid } from '../data/request/clip';
 import Tag from '../data/models/Tag';
-import { PartialModelObject } from 'objection';
+import { PartialModelObject, raw } from 'objection';
 
 const router = express.Router();
 
@@ -55,6 +55,8 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
+    if (isNaN(id as any)) throw Error("id must be a number");
+
     const clip = await Clip.query()
       .select(
         'clip.chapter_id',
@@ -86,12 +88,6 @@ router.get('/:id', async (req, res) => {
   }
 })
 
-router.get('/tags', async (req, res) => {
-  const tags = await Tag.query()
-    .select('id', 'name');
-  return res.status(200).json(tags);
-})
-
 // Create a new clip
 router.post('/', isAuth, async (req, res) => {
   const userId: number = res.locals.userId;
@@ -121,8 +117,7 @@ router.post('/', isAuth, async (req, res) => {
         // Get tag from database if it exists, return null if it doesn't
         const tag = await Tag.query(trx)
           .select('id')
-          .where('name', tagName)
-          .first()
+          .findOne('name', tagName)
           .catch(error => null);
         // Check tag already exists  
         if (tag && clip) {
@@ -137,7 +132,7 @@ router.post('/', isAuth, async (req, res) => {
     // Transaction committed
     return res.status(200).send();
   } catch (error) {
-    console.log(error.message);
+    console.error(error.message);
     // Transaction is rolled back
     return res.status(400).send();
   }
@@ -147,21 +142,29 @@ router.post('/', isAuth, async (req, res) => {
 router.delete('/:id', isAuth, async (req, res) => {
   const { id } = req.params;
   const userId: string = res.locals.userId;
-  
+
   try {
+    if (isNaN(id as any)) throw Error("Can't delete clip, id must be a number");
+
     await Clip.transaction(async (tsx) => {
-      // Get clip tags
-      // const tags = await Clip.relatedQuery('tags', tsx)
-      //   .for(id)
-      //   .withGraphFetched('clips');
+      // Subquery to get tags for clip {id}
+      const tags = Clip.relatedQuery('tags', tsx).for(id).select('tag.id');
 
-      // // Delete tags with no other
-      // for (const tag of tags) {
-      //   const clipCount = await tag.$relatedQuery('clips', tsx).resultSize();
-      //   await tag.$relatedQuery('clips', tsx).unrelate();
-      //   if (clipCount <= 1) await tag.$query(tsx).delete();
-      // }
+      // Subquery to get clips tags with no other uses
+      const tagsToDelete = Tag.query(tsx)
+        .select('tag_id')
+        .for(tags)
+        .joinRelated('clips')
+        .groupBy('tag_id')
+        .having(raw('count(tag_id) = 1'))
+        .whereIn('tag.id', tags);
 
+      // Delete orphan tags
+      await Clip.relatedQuery('tags', tsx)
+        .for(id)
+        .delete()
+        .whereIn('tag.id', tagsToDelete);
+        
       // Delete the clip
       await Clip.query(tsx)
         .delete()
@@ -174,7 +177,7 @@ router.delete('/:id', isAuth, async (req, res) => {
     return res.status(200).send();
   } catch (error) {
     // Error deleting
-    console.log(error.message);
+    console.error(error.message);
     return res.status(400).send();
   }
 });

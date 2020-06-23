@@ -12,6 +12,7 @@ exports.up = (knex: Knex): Promise<any> => {
       .notNullable()
       .references('id')
       .inTable('account')
+      .onDelete('CASCADE')
       .index();
     table
       .integer('room_id')
@@ -19,6 +20,7 @@ exports.up = (knex: Knex): Promise<any> => {
       .notNullable()
       .references('id')
       .inTable('room')
+      .onDelete('CASCADE')
       .index();
     table
       .string('nickname', 24)

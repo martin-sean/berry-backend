@@ -92,8 +92,7 @@ router.get('/username/:username', async (req, res) => {
   const { username } = req.params;
   const account = await Account.query()
     .select('username', 'moderator', 'created_at')
-    .where('username', '=', username)
-    .first();
+    .findOne('username', '=', username);
   return account ? res.status(200).json(account) : res.status(404).send();
 });
 

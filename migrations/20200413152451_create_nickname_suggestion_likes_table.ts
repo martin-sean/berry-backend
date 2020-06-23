@@ -12,6 +12,7 @@ exports.up = (knex: Knex): Promise<any> => {
       .notNullable()
       .references('id')
       .inTable('nickname_suggestion')
+      .onDelete('CASCADE')
       .index();
     table
       .integer('account_id')
@@ -19,6 +20,7 @@ exports.up = (knex: Knex): Promise<any> => {
       .notNullable()
       .references('id')
       .inTable('account')
+      .onDelete('CASCADE')
       .index();
     table
       .timestamps(true, true);

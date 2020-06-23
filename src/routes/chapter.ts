@@ -17,8 +17,7 @@ router.get('/', async (req, res) => {
 router.get('/:chapter_id/sides/:side_no/checkpoints', async (req, res) => {
   const sides = Chapter.relatedQuery('sides')
     .for(req.params.chapter_id)
-    .where('side_no', req.params.side_no)
-    .first();
+    .findOne('side_no', req.params.side_no);
   
   res.json(await Side.relatedQuery('checkpoints').for(sides))  
 });
@@ -27,13 +26,11 @@ router.get('/:chapter_id/sides/:side_no/checkpoints', async (req, res) => {
 router.get('/:chapter_id/sides/:side_no/checkpoints/:checkpoint_no/rooms', async (req, res) => {
   const sides = Chapter.relatedQuery('sides')
     .for(req.params.chapter_id)
-    .where('side_no', req.params.side_no)
-    .first();
+    .findOne('side_no', req.params.side_no);
   
   const checkpoints = Side.relatedQuery('checkpoints')
     .for(req.params.side_no)
-    .where('checkpoint_no', req.params.checkpoint_no)
-    .first()
+    .findOne('checkpoint_no', req.params.checkpoint_no)
     .for(sides);
 
     res.json(await Checkpoint.relatedQuery('rooms').for(checkpoints));
@@ -43,18 +40,15 @@ router.get('/:chapter_id/sides/:side_no/checkpoints/:checkpoint_no/rooms', async
 router.get('/:chapter_id/sides/:side_no/checkpoints/:checkpoint_no/rooms/:room_no', async (req, res) => {
   const sides = Chapter.relatedQuery('sides')
     .for(req.params.chapter_id)
-    .where('side_no', req.params.side_no)
-    .first();
+    .findOne('side_no', req.params.side_no);
   
   const checkpoints = Side.relatedQuery('checkpoints')
     .for(req.params.side_no)
-    .where('checkpoint_no', req.params.checkpoint_no)
-    .first()
+    .findOne('checkpoint_no', req.params.checkpoint_no)
     .for(sides);
 
     res.json(await Checkpoint.relatedQuery('rooms')
-    .where('room_no', req.params.room_no)
-    .first()
+    .findOne('room_no', req.params.room_no)
     .for(checkpoints));
 });
 

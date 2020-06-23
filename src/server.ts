@@ -15,6 +15,8 @@ import AuthenticateRouter from './routes/auth';
 import UserRouter from './routes/user';
 import ClipRouter from './routes/clip';
 import ModRouter from './routes/mod';
+import TagRouter from './routes/tag';
+
 const app = express();
 const router = express.Router();
 dotenv.config();
@@ -38,6 +40,7 @@ router.use('/auth', AuthenticateRouter);
 router.use('/user', UserRouter);
 router.use('/clip', ClipRouter);
 router.use('/mod', ModRouter);
+router.use('/tag', TagRouter);
 
 // Router version 1
 app.use('/v1', router);
