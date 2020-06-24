@@ -2,6 +2,7 @@ import express from 'express';
 import Account from '../data/models/Account';
 import isAuth from '../middleware/isAuth';
 import { createAccessToken } from '../utils/auth';
+import { deleteClipById } from '../actions/clip';
 import Clip from '../data/models/Clip';
 
 const router = express.Router();
@@ -26,7 +27,6 @@ router.patch('/current', isAuth, async (req, res) => {
 
   // Check if username is a word ([A-Za-z0-9_]*) and in range
   if (!usernamePattern.test(username) || username.length < 3 || username.length > 20) {
-    console.log("Username not valid");
     return res.status(400).send();
   }
     
@@ -48,37 +48,28 @@ router.patch('/current', isAuth, async (req, res) => {
 router.delete('/current', isAuth, async (req, res) => {
   type DeleteRequest = { 'deleteAccount': boolean, 'deleteClips': boolean };
   const deleteRequest = req.body as DeleteRequest;
+  const userId: number = res.locals.userId;
+  
   // Check if the user really wants to delete their account
   if (!deleteRequest.deleteAccount) return res.status(422).send();
 
   try {
     // Create a new transaction to delete account and update related clips
-    await Account.transaction(async tsx => {
+    await Account.transaction(async trx => {
+      // Check if clip deleting was requested
       if (deleteRequest.deleteClips) {
         // Get all clips
-        const clips = await Account.relatedQuery('clips', tsx);
-        
-        clips.map(async (clip, index) => {
-          const tags = await clip.$relatedQuery('tags', tsx);
-          tags.map( async (tag, index) => {
-            const clipCount = await tag.$relatedQuery('clips', tsx).resultSize();
-            if (clipCount === 1) await tag.$query(tsx).delete();
-          });
-        });
-          
-        // Try and do in one query
-        await Account.relatedQuery('clips', tsx)
-          
-
-        // Delete a users clips
-        await Account.relatedQuery('clips', tsx)
-          .for(res.locals.userId)
-          .delete();
+        const clips = await Account.relatedQuery('clipsCreated', trx).for(userId);
+        // Delete all clips
+        for (const clip of clips) {
+          await deleteClipById((clip as Clip).id, userId, trx);
+        }
       }
-      await Account.query(tsx).deleteById(res.locals.userId);
-      console.log(`Deleted account #${ res.locals.userId }`);
+      // Delete account
+      await Account.query(trx).deleteById(userId);
     });
     // Account successfully deleted
+    console.log(`Deleted account #${ userId }`);
     return res.status(204).send();
   // Error occured during deletion, account doesn't exist or connection is broken
   } catch (error) {

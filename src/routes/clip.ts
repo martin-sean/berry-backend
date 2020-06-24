@@ -112,11 +112,12 @@ router.put('/:id', isAuth, async (req, res) => {
   const { id } = req.params;
   const userId: number = res.locals.userId;
   const data: ClipData = req.body;
+  const updateTags = req.query.updateTags as string;
 
   try {
     if (isNaN(id as any)) throw Error("id must be a number");
     
-    await updateClip(data, parseInt(id), userId);
+    await updateClip(data, userId, updateTags === 'true');
     return res.status(200).send();
   } catch (error) {
     console.log(error.message);
@@ -131,8 +132,9 @@ router.delete('/:id', isAuth, async (req, res) => {
 
   try {
     if (isNaN(id as any)) throw Error("Can't delete clip, id must be a number");
-
-    await deleteClipById(parseInt(id), userId);
+    await Clip.transaction(async (trx) => {
+      await deleteClipById(parseInt(id), userId, trx);
+    });
     return res.status(200).send();
   } catch (error) {
     console.error(error.message);
