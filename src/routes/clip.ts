@@ -2,8 +2,7 @@ import express from 'express';
 import isAuth from '../middleware/isAuth';
 import Clip from '../data/models/Clip';
 import { ClipData, clipDataValid } from '../data/request/clip';
-import Tag from '../data/models/Tag';
-import { PartialModelObject, raw } from 'objection';
+import { deleteClipById, createClip, updateClip } from '../actions/clip';
 
 const router = express.Router();
 
@@ -53,8 +52,9 @@ router.get('/', async (req, res) => {
  * Get a clip by id
  */
 router.get('/:id', async (req, res) => {
+  const { id } = req.params;
+
   try {
-    const { id } = req.params;
     if (isNaN(id as any)) throw Error("id must be a number");
 
     const clip = await Clip.query()
@@ -97,43 +97,29 @@ router.post('/', isAuth, async (req, res) => {
   if(!clipDataValid(data)) return res.status(400).send();
 
   try {
-    await Clip.transaction(async trx => {
-      // Insert a new clip
-      const clip = await Clip.query(trx).insert({
-        account_id: userId,
-        chapter_id: data.chapterId,
-        side_no: data.sideNo,
-        checkpoint_no: data.checkpointNo,
-        room_no: data.roomNo,
-        name: data.name || undefined,
-        description: data.description || undefined,
-        video_id: data.videoId,
-        start_time: data.startTime,
-        end_time: data.endTime
-      });
-
-      // Handle tags
-      for (const tagName of data.tags) {
-        // Get tag from database if it exists, return null if it doesn't
-        const tag = await Tag.query(trx)
-          .select('id')
-          .findOne('name', tagName)
-          .catch(error => null);
-        // Check tag already exists  
-        if (tag && clip) {
-          // Relate the clip with an existing tag
-          await clip.$relatedQuery('tags', trx).relate(tag);
-        } else if (clip) {
-          // Create new tag
-          await clip.$relatedQuery('tags', trx).insert({ name: tagName } as PartialModelObject<Tag>);
-        }
-      }
-    });
-    // Transaction committed
+    createClip(data, userId);
     return res.status(200).send();
   } catch (error) {
     console.error(error.message);
-    // Transaction is rolled back
+    return res.status(400).send();
+  }
+});
+
+/**
+ * Allow editing of existing clips
+ */
+router.put('/:id', isAuth, async (req, res) => {
+  const { id } = req.params;
+  const userId: number = res.locals.userId;
+  const data: ClipData = req.body;
+
+  try {
+    if (isNaN(id as any)) throw Error("id must be a number");
+    
+    await updateClip(data, parseInt(id), userId);
+    return res.status(200).send();
+  } catch (error) {
+    console.log(error.message);
     return res.status(400).send();
   }
 });
@@ -141,42 +127,14 @@ router.post('/', isAuth, async (req, res) => {
 // Delete a clip for a given id
 router.delete('/:id', isAuth, async (req, res) => {
   const { id } = req.params;
-  const userId: string = res.locals.userId;
+  const userId: number = res.locals.userId;
 
   try {
     if (isNaN(id as any)) throw Error("Can't delete clip, id must be a number");
 
-    await Clip.transaction(async (tsx) => {
-      // Subquery to get tags for clip {id}
-      const tags = Clip.relatedQuery('tags', tsx).for(id).select('tag.id');
-
-      // Subquery to get clips tags with no other uses
-      const tagsToDelete = Tag.query(tsx)
-        .select('tag_id')
-        .for(tags)
-        .joinRelated('clips')
-        .groupBy('tag_id')
-        .having(raw('count(tag_id) = 1'))
-        .whereIn('tag.id', tags);
-
-      // Delete orphan tags
-      await Clip.relatedQuery('tags', tsx)
-        .for(id)
-        .delete()
-        .whereIn('tag.id', tagsToDelete);
-        
-      // Delete the clip
-      await Clip.query(tsx)
-        .delete()
-        .where('id', id)
-        .where('account_id', userId)
-        .limit(1);
-    });
-    // Success
-    console.log('deleted');
+    await deleteClipById(parseInt(id), userId);
     return res.status(200).send();
   } catch (error) {
-    // Error deleting
     console.error(error.message);
     return res.status(400).send();
   }
