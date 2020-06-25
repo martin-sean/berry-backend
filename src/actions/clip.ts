@@ -34,10 +34,10 @@ export const createClip = async (data: ClipData, userId: number) => {
  * @param data Clip data
  * @param userId ID of user creating the clip
  */
-export const updateClip = async (data: ClipData, userId: number, updateTags: boolean) => {
+export const updateClip = async (id: number, userId: number, data: ClipData, updateTags: boolean) => {
   await Clip.transaction(async trx => {
     // Update the clip
-    const clip = await Clip.query(trx).patchAndFetch({
+    const clip = await Clip.query(trx).patchAndFetchById(id, {
       account_id: userId,
       chapter_id: data.chapterId,
       side_no: data.sideNo,
@@ -48,7 +48,8 @@ export const updateClip = async (data: ClipData, userId: number, updateTags: boo
       video_id: data.videoId,
       start_time: data.startTime,
       end_time: data.endTime
-    });
+    }).where('account_id', userId)
+      .returning("*") as unknown as Clip;
 
     // Continue if tag update requested
     if (!updateTags) return;

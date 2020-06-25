@@ -106,7 +106,7 @@ router.post('/', isAuth, async (req, res) => {
 });
 
 /**
- * Allow editing of existing clips
+ * Edit existing clip
  */
 router.put('/:id', isAuth, async (req, res) => {
   const { id } = req.params;
@@ -117,7 +117,7 @@ router.put('/:id', isAuth, async (req, res) => {
   try {
     if (isNaN(id as any)) throw Error("id must be a number");
     
-    await updateClip(data, userId, updateTags === 'true');
+    await updateClip(parseInt(id), userId, data, updateTags === 'true');
     return res.status(200).send();
   } catch (error) {
     console.log(error.message);

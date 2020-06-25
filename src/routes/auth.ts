@@ -55,9 +55,7 @@ router.post('/login', async (req, res) => {
 router.post('/refresh', async (req, res) => {
   const refreshToken = req.cookies.rid as string;
   // No refresh token
-  if (!refreshToken) {
-    return res.status(401).send();
-  }
+  if (!refreshToken) return res.status(401).send();
 
   try {
     const payload = verify(refreshToken, process.env.RT_SECRET!) as RefreshToken;
