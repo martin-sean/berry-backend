@@ -39,7 +39,7 @@ router.patch('/current', isAuth, async (req, res) => {
     return res.status(200).send(createAccessToken(<any> updatedAccount));
   } catch (error) {
     // Error occured, username not unique
-    console.log("Error inserting username into DB");
+    console.log(error.message);
     return res.status(400).send();
   }
 })

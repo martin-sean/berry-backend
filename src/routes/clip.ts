@@ -1,7 +1,7 @@
 import express from 'express';
 import isAuth from '../middleware/isAuth';
 import Clip from '../data/models/Clip';
-import { ClipData, clipDataValid } from '../data/request/clip';
+import { clipDataValid, updateClipDataValid, NewClipData, UpdateClipData } from '../data/request/clip';
 import { deleteClipById, createClip, updateClip } from '../actions/clip';
 
 const router = express.Router();
@@ -91,7 +91,7 @@ router.get('/:id', async (req, res) => {
 // Create a new clip
 router.post('/', isAuth, async (req, res) => {
   const userId: number = res.locals.userId;
-  const data: ClipData = req.body;
+  const data: NewClipData = req.body;
 
   // Validate clip data
   if(!clipDataValid(data)) return res.status(400).send();
@@ -111,12 +111,13 @@ router.post('/', isAuth, async (req, res) => {
 router.put('/:id', isAuth, async (req, res) => {
   const { id } = req.params;
   const userId: number = res.locals.userId;
-  const data: ClipData = req.body;
+  const data: UpdateClipData = req.body;
   const updateTags = req.query.updateTags as string;
+  // Validate update clip data
+  if(!updateClipDataValid(data)) return res.status(400).send();
 
   try {
     if (isNaN(id as any)) throw Error("id must be a number");
-    
     await updateClip(parseInt(id), userId, data, updateTags === 'true');
     return res.status(200).send();
   } catch (error) {

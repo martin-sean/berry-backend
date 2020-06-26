@@ -1,7 +1,6 @@
 import Clip from "../data/models/Clip";
-import Tag from "../data/models/Tag";
-import { PartialModelObject, raw, Transaction } from 'objection';
-import { ClipData } from "../data/request/clip";
+import { Transaction } from 'objection';
+import { NewClipData, UpdateClipData } from "../data/request/clip";
 import { deleteOrphanTags, createAndRelateTags } from "./tag";
 
 /**
@@ -9,7 +8,7 @@ import { deleteOrphanTags, createAndRelateTags } from "./tag";
  * @param data Clip data
  * @param userId ID of user creating the clip
  */
-export const createClip = async (data: ClipData, userId: number) => {
+export const createClip = async (data: NewClipData, userId: number) => {
   await Clip.transaction(async trx => {
     // Insert a new clip
     const clip = await Clip.query(trx).insert({
@@ -25,7 +24,7 @@ export const createClip = async (data: ClipData, userId: number) => {
       end_time: data.endTime
     });
     // Insert the tags
-    await createAndRelateTags(clip, data.tags, trx);
+    data.tags && await createAndRelateTags(clip, data.tags, trx);
   });
 }
 
@@ -34,15 +33,11 @@ export const createClip = async (data: ClipData, userId: number) => {
  * @param data Clip data
  * @param userId ID of user creating the clip
  */
-export const updateClip = async (id: number, userId: number, data: ClipData, updateTags: boolean) => {
+export const updateClip = async (id: number, userId: number, data: UpdateClipData, updateTags: boolean) => {
   await Clip.transaction(async trx => {
     // Update the clip
     const clip = await Clip.query(trx).patchAndFetchById(id, {
       account_id: userId,
-      chapter_id: data.chapterId,
-      side_no: data.sideNo,
-      checkpoint_no: data.checkpointNo,
-      room_no: data.roomNo,
       name: data.name || undefined,
       description: data.description || undefined,
       video_id: data.videoId,
@@ -53,12 +48,13 @@ export const updateClip = async (id: number, userId: number, data: ClipData, upd
 
     // Continue if tag update requested
     if (!updateTags) return;
+    
     // Delete orphan tags
     await deleteOrphanTags(clip.id, trx);
     // Unrelate all other tags
     await clip.$relatedQuery('tags', trx).unrelate();
     // Add new tags
-    await createAndRelateTags(clip, data.tags, trx);
+    data.tags && await createAndRelateTags(clip, data.tags, trx);
   });
 }
 
