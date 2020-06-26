@@ -29,7 +29,7 @@ Model.knex(knex);
 app.set('json spaces', 2)
 
 // Middlewares
-app.use(cors());
+app.use(cors({ credentials: true, origin: 'https://api.berrycamp.com' }));
 app.use(helmet());
 app.use(cookieParser());
 app.use(bodyParser.json());
