@@ -23,16 +23,19 @@ router.get('/checkusername/:username', isAuth, async (req, res) => {
 router.post('/login', async (req, res) => {
   type AuthRequest = { idToken: string }
   const authRequest: AuthRequest = req.body;
-  const client = new OAuth2Client(CLIENT_ID);
-  const ticket = await client.verifyIdToken({
-    idToken: authRequest.idToken,
-    audience: CLIENT_ID,
-  });
-  const payload = ticket.getPayload();
-  const exteralId = payload && payload['sub'];
+  
+  try {
+    const client = new OAuth2Client(CLIENT_ID);
+    const ticket = await client.verifyIdToken({
+      idToken: authRequest.idToken,
+      audience: CLIENT_ID,
+    });
+    const payload = ticket.getPayload();
+    const exteralId = payload && payload['sub'];
+  
+    // Confirm that exteral id was included in the request
+    if (!exteralId) throw new Error('External ID not provided');
 
-  // Confirm that exteral id was included in the request
-  if (exteralId) {
     // Search for an account with the external id
     let account = await Account.query().findOne('external_id', exteralId);
     // Create a new account if one does not exist
@@ -46,9 +49,11 @@ router.post('/login', async (req, res) => {
     sendRefreshToken(res, account);
     // Issue a new access token
     return res.status(200).send(createAccessToken(account));
+  } catch (error) {
+    // Login request could not be completed
+    console.log(error.message)
+    return res.status(400).send();
   }
-  // Login request could not be completed
-  return res.status(400).send();
 });
 
 // Refresh an expired access token
