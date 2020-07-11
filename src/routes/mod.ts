@@ -13,7 +13,7 @@ router.delete('/clip/:id', isAuth, isMod, async (req, res) => {
   const { id } = req.params;
 
   try {
-    if (isNaN(id as any)) throw Error("id must be a number");
+    if (isNaN(id as any)) throw new Error("id must be a number");
     
     modDeleteClipById(parseInt(id));
     return res.status(200).send();

@@ -21,6 +21,7 @@ export default async (req: Request, res: Response, next: NextFunction) => {
     res.locals.isMod = tokenData.moderator;
     next();
   } catch (error) {
+    console.log(error);
     // Unauthorised
     return res.status(401).send();
   }

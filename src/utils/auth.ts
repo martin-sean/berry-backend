@@ -34,7 +34,8 @@ export const sendRefreshToken = (res: Response, account: Account) => {
   res.cookie(
     refreshTokenName,
     createRefreshToken(account),
-    { httpOnly: true, secure: true, sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 * 1000 }
+    // { httpOnly: true, secure: true, sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 * 1000 }
+    { httpOnly: true, sameSite: 'strict', maxAge: 7 * 24 * 60 * 60 * 1000 }
   );
 }
 
